@@ -37,7 +37,7 @@ namespace ServerTest {
         _response.setHeader("Access-Control-Allow-Origin", "*");
         
         // Response-Body
-        _response.write("Vielen Dank - Deine Bestellung ist bei uns wie folgt eingegangen:" + "<br>" + "<p>Warenkorb</p>" + "<br>");
+        _response.write("Vielen Dank - Deine Bestellung ist bei uns wie folgt eingegangen:" + "<br>" + "Warenkorb" + "<br>");
        // _response.write("Port: " + port + "<br>");
       //  _response.write("Method: " + _request.method + "<br>");
        // _response.write("Url: " + _request.url + "<br>");

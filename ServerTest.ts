@@ -39,7 +39,7 @@ namespace ServerTest {
         // Response-Body
         _response.write("Ich höre Stimmen!!<br>");
         _response.write("Port: " + port + "<br>");
-        _response.write("Method: " + _request.method + "<br> BLUBLUBLUBLBU");
+        _response.write("Method: " + _request.method + "<br>");
         _response.write("Url: " + _request.url + "<br>");
         _response.write("Headers: " + _request.headers + "<br>");
         
@@ -49,7 +49,7 @@ namespace ServerTest {
         let query: AssocStringString = Url.parse(_request.url, true).query;
         // ?
         for (let key in query)
-            _response.write(key + ": " + query[key]);
+            _response.write(key + ": " + query[key] + "<br>");
         
         // Antwort abschließen und abschicken
         _response.end();

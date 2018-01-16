@@ -31,7 +31,7 @@ var ServerTest;
         // Response-Body
         _response.write("Ich h�re Stimmen!!<br>");
         _response.write("Port: " + port + "<br>");
-        _response.write("Method: " + _request.method + "<br>");
+        _response.write("Method: " + _request.method + "<br> BLUBLUBLUBLBU");
         _response.write("Url: " + _request.url + "<br>");
         _response.write("Headers: " + _request.headers + "<br>");
         // ?

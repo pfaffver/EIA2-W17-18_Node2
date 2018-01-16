@@ -34,6 +34,7 @@ var ServerTest;
         _response.write("Method: " + _request.method + "<br>");
         _response.write("Url: " + _request.url + "<br>");
         _response.write("Headers: " + _request.headers + "<br>");
+        _response.write("Baumart: ");
         // ?
         let query = Url.parse(_request.url, true).query;
         // ?
@@ -41,6 +42,7 @@ var ServerTest;
             console.log(key + ": " + query[key]);
         // Antwort abschlie�en und abschicken
         _response.end();
+        console.log(_response.end());
     }
 })(ServerTest || (ServerTest = {}));
 //# sourceMappingURL=ServerTest.js.map

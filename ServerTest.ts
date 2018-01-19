@@ -8,13 +8,13 @@ namespace ServerTest {
     interface AssocStringString {
         [key: string]: string;
     }
-    
+
     // Port vom Process-Objekt erfragen 
     let port: number = process.env.PORT;
     // Port nicht definiert -> lokale Maschine, Port selbst definieren
- //if (port == undefined)
-        //port = 8100;
-    
+    //if (port == undefined)
+    //port = 8100;
+ 
     // Server-Objekt kreieren
     let server: Http.Server = Http.createServer();
     // Event-Handler installieren
@@ -35,22 +35,23 @@ namespace ServerTest {
         _response.setHeader("content-type", "text/html; charset=utf-8");
         // Header: ?
         _response.setHeader("Access-Control-Allow-Origin", "*");
-        
+
         // Response-Body
         _response.write("Vielen Dank - Deine Bestellung ist bei uns wie folgt eingegangen:" + "<br>" + "Warenkorb" + "<br>");
-       // _response.write("Port: " + port + "<br>");
-      //  _response.write("Method: " + _request.method + "<br>");
-       // _response.write("Url: " + _request.url + "<br>");
-       // _response.write("Headers: " + _request.headers + "<br>");
-        
-        
+        // _response.write("Port: " + port + "<br>");
+        //  _response.write("Method: " + _request.method + "<br>");
+        // _response.write("Url: " + _request.url + "<br>");
+        // _response.write("Headers: " + _request.headers + "<br>       
 
         // ?
         let query: AssocStringString = Url.parse(_request.url, true).query;
         // ?
-        for (let key in query)
-            _response.write(key + ": " + query[key] + "<br>");
         
+        _response.write( "Baumart" + ": " + query["Baumart"]);
+        _response.write( "Beleuchtung" + ": " + query["Beleuchtung"]);
+        for (let key in query)
+        _response.write(key + ": " + query[key] + "<br>");
+
         // Antwort abschlieﬂen und abschicken
         _response.end();
     }

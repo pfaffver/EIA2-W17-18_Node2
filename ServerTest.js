@@ -33,10 +33,12 @@ var ServerTest;
         // _response.write("Port: " + port + "<br>");
         //  _response.write("Method: " + _request.method + "<br>");
         // _response.write("Url: " + _request.url + "<br>");
-        // _response.write("Headers: " + _request.headers + "<br>");
+        // _response.write("Headers: " + _request.headers + "<br>       
         // ?
         let query = Url.parse(_request.url, true).query;
         // ?
+        _response.write("Baumart" + ": " + query["Baumart"]);
+        _response.write("Beleuchtung" + ": " + query["Beleuchtung"]);
         for (let key in query)
             _response.write(key + ": " + query[key] + "<br>");
         // Antwort abschlie�en und abschicken

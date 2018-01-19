@@ -47,8 +47,8 @@ namespace ServerTest {
         let query: AssocStringString = Url.parse(_request.url, true).query;
         // ?
         
-        _response.write( "Baumart" + ": " + query["Baumart"] + "<br>");
-        _response.write( "Beleuchtung" + ": " + query["Beleuchtung"]+ "<br>");
+        _response.write( "Baumart" + ": " + query["Deine Baumart"] + "<br>");
+        _response.write( "Beleuchtung" + ": " + query["Deine Beleuchtung"]+ "<br>");
         for (let key in query)
         _response.write(key + ": " + query[key] + "<br>");
 

@@ -37,8 +37,8 @@ var ServerTest;
         // ?
         let query = Url.parse(_request.url, true).query;
         // ?
-        _response.write("Baumart" + ": " + query["Baumart"]);
-        _response.write("Beleuchtung" + ": " + query["Beleuchtung"]);
+        _response.write("Baumart" + ": " + query["Baumart"] + "<br>");
+        _response.write("Beleuchtung" + ": " + query["Beleuchtung"] + "<br>");
         for (let key in query)
             _response.write(key + ": " + query[key] + "<br>");
         // Antwort abschlie�en und abschicken

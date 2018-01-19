@@ -14,7 +14,7 @@ namespace ServerTest {
     // Port nicht definiert -> lokale Maschine, Port selbst definieren
     //if (port == undefined)
     //port = 8100;
- 
+
     // Server-Objekt kreieren
     let server: Http.Server = Http.createServer();
     // Event-Handler installieren
@@ -46,17 +46,21 @@ namespace ServerTest {
         // ?
         let query: AssocStringString = Url.parse(_request.url, true).query;
         // ?
-        
-        _response.write( "Baumart" + ": " + query["Deine Baumart"] + "<br>");
-        _response.write( "Beleuchtung" + ": " + query["Deine Beleuchtung"] + "<br>");
-        _response.write( "Halterung" + ": " + query["Deine Halterung"] + "<br>");
-        
+
+        _response.write("Baumart" + ": " + query["Deine Baumart"] + "<br>");
+        _response.write("Beleuchtung" + ": " + query["Deine Beleuchtung"] + "<br>");
+        _response.write("Halterung" + ": " + query["Deine Halterung"] + "<br>");
+
         if (query["Deine Halterung"] == "Auswahl4") {
-            _response.write( "Halterung" + ": " + "schwarz" + "<br>");
-            }
-        
-        for (let key in query)
-        _response.write(key + ": " + query[key] + "<br>");
+            _response.write("Halterung: " + "schwarz" + "<br>");
+        }
+
+        for (let key in query) {
+            
+            
+            _response.write(key + ": " + query[key] + "<br>");
+ 
+        }
 
         // Antwort abschlieﬂen und abschicken
         _response.end();

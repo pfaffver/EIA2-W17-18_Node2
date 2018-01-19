@@ -41,10 +41,11 @@ var ServerTest;
         _response.write("Beleuchtung" + ": " + query["Deine Beleuchtung"] + "<br>");
         _response.write("Halterung" + ": " + query["Deine Halterung"] + "<br>");
         if (query["Deine Halterung"] == "Auswahl4") {
-            _response.write("Halterung" + ": " + "schwarz" + "<br>");
+            _response.write("Halterung: " + "schwarz" + "<br>");
         }
-        for (let key in query)
+        for (let key in query) {
             _response.write(key + ": " + query[key] + "<br>");
+        }
         // Antwort abschlie�en und abschicken
         _response.end();
     }

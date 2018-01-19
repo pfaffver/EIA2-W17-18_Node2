@@ -48,7 +48,8 @@ namespace ServerTest {
         // ?
         
         _response.write( "Baumart" + ": " + query["Deine Baumart"] + "<br>");
-        _response.write( "Beleuchtung" + ": " + query["Deine Beleuchtung"]+ "<br>");
+        _response.write( "Beleuchtung" + ": " + query["Deine Beleuchtung"] + "<br>");
+        _response.write( "Halterung" + ": " + query["Deine Halterung"] + "<br>");
         for (let key in query)
         _response.write(key + ": " + query[key] + "<br>");
 

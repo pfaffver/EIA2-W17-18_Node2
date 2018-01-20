@@ -98,6 +98,9 @@ namespace ServerTest {
         _response.write("Postleitzahl" + ": " + query["PLZ"] + "<br>");
         _response.write("E-Mail" + ": " + query["E-Mail"] + "<br>");
 
+        for (let key in query)
+            _response.write(key + ": " + query[key]);
+
         // Antwort abschlieﬂen und abschicken
         _response.end();
     }

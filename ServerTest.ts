@@ -65,25 +65,39 @@ namespace ServerTest {
         if (query["CheckboxSchmuckartikel"] == "check") {
             _response.write("Schmuckartikel: Christbaumkugeln, bunt " + query["StepperSchmuckartikel9"] + "Stk. <br>");
         }
-        
+
         if (query["CheckboxSchmuckartikel"] == "check,check") {
             _response.write("Schmuckartikel: Christbaumkugeln, bunt " + query["StepperSchmuckartikel9"] + "Stk. <br>");
             _response.write("Schmuckartikel: Christbaumkugeln, rot gestreift " + query["StepperSchmuckartikel10"] + "Stk. <br>");
         }
-        
+
         if (query["CheckboxSchmuckartikel"] == "check,check,check") {
             _response.write("Schmuckartikel: Christbaumkugeln, bunt " + query["StepperSchmuckartikel9"] + "Stk. <br>");
             _response.write("Schmuckartikel: Christbaumkugeln, rot gestreift " + query["StepperSchmuckartikel10"] + "Stk. <br>");
             _response.write("Schmuckartikel: Lametta, silber " + query["StepperSchmuckartikel11"] + "Stk. <br>");
         }
-        
+
         if (query["CheckboxSchmuckartikel"] == "check,check,check,check") {
             _response.write("Schmuckartikel: Christbaumkugeln, bunt " + query["StepperSchmuckartikel9"] + "Stk. <br>");
             _response.write("Schmuckartikel: Christbaumkugeln, rot gestreift " + query["StepperSchmuckartikel10"] + "Stk. <br>");
-            _response.write("Schmuckartikel: Lametta, silber " + query["StepperSchmuckartikel11"] + "Stk. <br>");            
+            _response.write("Schmuckartikel: Lametta, silber " + query["StepperSchmuckartikel11"] + "Stk. <br>");
             _response.write("Schmuckartikel: Lametta, gold " + query["StepperSchmuckartikel12"] + "Stk. <br>");
         }
 
+        _response.write("Lieferadresse <br>" + "Name" + ": " + query["Name"] + "<br>");
+        _response.write("Strasse" + ": " + query["Strasse"] + "<br>");
+        _response.write("Hausnummer" + ": " + query["Hausnummer"] + "<br>");
+        _response.write("Wohnort" + ": " + query["Ort"] + "<br>");
+        _response.write("Postleitzahl" + ": " + query["PLZ"] + "<br>");
+        _response.write("E-Mail" + ": " + query["E-Mail"] + "<br>");
+
+        if (query["Lieferoption"] == "Auswahl3") {
+            _response.write("Lieferung erfolgt via: Standard <br>");
+        }
+
+        if (query["Lieferoption"] == "Auswahl4") {
+            _response.write("Lieferung erfolgt via: Expressversand <br>");
+        }
 
         for (let key in query) {
             _response.write(key + ": " + query[key] + "<br>");

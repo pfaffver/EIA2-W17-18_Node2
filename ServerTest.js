@@ -48,6 +48,9 @@ var ServerTest;
         if (query["Deine Halterung"] == "Auswahl6") {
             _response.write("Halterung: silber <br>");
         }
+        if (query["CheckboxSchmuckartikel"] == "check") {
+            _response.write("");
+        }
         for (let key in query) {
             _response.write(key + ": " + query[key] + "<br>");
         }

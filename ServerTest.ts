@@ -62,6 +62,9 @@ namespace ServerTest {
             _response.write("Halterung: silber <br>");
         }
         
+         if (query["CheckboxSchmuckartikel"] == "check") {
+            _response.write("");
+        }
         
 
         for (let key in query) {

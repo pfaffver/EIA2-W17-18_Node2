@@ -63,25 +63,25 @@ namespace ServerTest {
         }
 
         if (query["CheckboxSchmuckartikel"] == "check") {
-            _response.write("Schmuckartikel: Christbaumkugeln, bunt" + " Menge: " + ["StepperSchmuckartikel9"] + "<br>");
+            _response.write("Schmuckartikel: Christbaumkugeln, bunt" + query["StepperSchmuckartikel9"] + "Stk. <br>");
         }
         
         if (query["CheckboxSchmuckartikel"] == "check,check") {
-            _response.write("Schmuckartikel: Christbaumkugeln, bunt" + " Menge: " + ["StepperSchmuckartikel9"] + "<br>");
-            _response.write("Schmuckartikel: Christbaumkugeln, rot gestreift" + " Menge: " + ["StepperSchmuckartikel10"] + "<br>");
+            _response.write("Schmuckartikel: Christbaumkugeln, bunt" + query["StepperSchmuckartikel9"] + "Stk. <br>");
+            _response.write("Schmuckartikel: Christbaumkugeln, rot gestreift" + query["StepperSchmuckartikel10"] + "Stk. <br>");
         }
         
         if (query["CheckboxSchmuckartikel"] == "check,check,check") {
-            _response.write("Schmuckartikel: Christbaumkugeln, bunt" + " Menge: " + ["StepperSchmuckartikel9"] + "<br>");
-            _response.write("Schmuckartikel: Christbaumkugeln, rot gestreift" + " Menge: " + ["StepperSchmuckartikel10"] + "<br>");
-            _response.write("Schmuckartikel: Lametta, silber" + " Menge: "  + ["StepperSchmuckartikel11"] + "<br>");
+            _response.write("Schmuckartikel: Christbaumkugeln, bunt" + query["StepperSchmuckartikel9"] + "Stk. <br>");
+            _response.write("Schmuckartikel: Christbaumkugeln, rot gestreift" + query["StepperSchmuckartikel10"] + "Stk. <br>");
+            _response.write("Schmuckartikel: Lametta, silber" + query["StepperSchmuckartikel11"] + "Stk. <br>");
         }
         
         if (query["CheckboxSchmuckartikel"] == "check,check,check,check") {
-            _response.write("Schmuckartikel: Christbaumkugeln, bunt" + " Menge: " + ["StepperSchmuckartikel9"] + "<br>");
-            _response.write("Schmuckartikel: Christbaumkugeln, rot gestreift" + " Menge: " + ["StepperSchmuckartikel10"] + "<br>");
-            _response.write("Schmuckartikel: Lametta, silber" + " Menge: "  + ["StepperSchmuckartikel11"] + "<br>");            
-            _response.write("Schmuckartikel: Lametta, gold" + " Menge: " + query["StepperSchmuckartikel12"] + "<br>");
+            _response.write("Schmuckartikel: Christbaumkugeln, bunt" + query["StepperSchmuckartikel9"] + "Stk. <br>");
+            _response.write("Schmuckartikel: Christbaumkugeln, rot gestreift" + query["StepperSchmuckartikel10"] + "Stk. <br>");
+            _response.write("Schmuckartikel: Lametta, silber" + query["StepperSchmuckartikel11"] + "Stk. <br>");            
+            _response.write("Schmuckartikel: Lametta, gold" + query["StepperSchmuckartikel12"] + "Stk. <br>");
         }
 
 

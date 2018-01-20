@@ -53,6 +53,16 @@ namespace ServerTest {
         if (query["Deine Halterung"] == "Auswahl4") {
             _response.write("Halterung: schwarz <br>");
         }
+        
+        if (query["Deine Halterung"] == "Auswahl5") {
+            _response.write("Halterung: gold <br>");
+        }
+        
+        if (query["Deine Halterung"] == "Auswahl5") {
+            _response.write("Halterung: silber <br>");
+        }
+        
+        
 
         for (let key in query) {
             _response.write(key + ": " + query[key] + "<br>");

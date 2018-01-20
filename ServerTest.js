@@ -45,7 +45,7 @@ var ServerTest;
         if (query["Deine Halterung"] == "Auswahl5") {
             _response.write("Halterung: gold <br>");
         }
-        if (query["Deine Halterung"] == "Auswahl5") {
+        if (query["Deine Halterung"] == "Auswahl6") {
             _response.write("Halterung: silber <br>");
         }
         for (let key in query) {

@@ -84,7 +84,7 @@ namespace ServerTest {
             _response.write("Schmuckartikel: Lametta, gold " + query["StepperSchmuckartikel12"] + "Stk. <br>");
         }
 
-        _response.write("Lieferadresse <br>" + "Name" + ": " + query["Name"] + "<br>");
+        _response.write("<p>Lieferadresse<p>" + "Name" + ": " + query["Name"] + "<br>");
         _response.write("Strasse" + ": " + query["Strasse"] + "<br>");
         _response.write("Hausnummer" + ": " + query["Hausnummer"] + "<br>");
         _response.write("Wohnort" + ": " + query["Ort"] + "<br>");

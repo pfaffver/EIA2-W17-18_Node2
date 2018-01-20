@@ -53,23 +53,35 @@ namespace ServerTest {
         if (query["Deine Halterung"] == "Auswahl4") {
             _response.write("Halterung: schwarz <br>");
         }
-        
+
         if (query["Deine Halterung"] == "Auswahl5") {
             _response.write("Halterung: gold <br>");
         }
-        
+
         if (query["Deine Halterung"] == "Auswahl6") {
             _response.write("Halterung: silber <br>");
         }
-        
-         if (query["CheckboxSchmuckartikel"] == "check") {
-            _response.write("");
+
+        if (query["CheckboxSchmuckartikel"] == "check") {
+            _response.write("Schmuckartikel: Christbaumkugeln, bunt" + " Stückzahl: " + ["StepperSchmuckartikel9"] + "<br>");
         }
         
+        if (query["CheckboxSchmuckartikel"] == "check,check") {
+            _response.write("Schmuckartikel: Christbaumkugeln, rot gestreift" + " Stückzahl: " + ["StepperSchmuckartikel10"] + "<br>");
+        }
+        
+        if (query["CheckboxSchmuckartikel"] == "check,check,check") {
+            _response.write("Schmuckartikel: Lametta, silber" + " Stückzahl: "  + ["StepperSchmuckartikel11"] + "<br>");
+        }
+        
+        if (query["CheckboxSchmuckartikel"] == "check,check,check,check") {
+            _response.write("Schmuckartikel: Lametta, gold" + " Stückzahl: " + ["StepperSchmuckartikel12"] + "<br>");
+        }
+
 
         for (let key in query) {
             _response.write(key + ": " + query[key] + "<br>");
- 
+
         }
 
         // Antwort abschließen und abschicken

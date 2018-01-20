@@ -49,7 +49,16 @@ var ServerTest;
             _response.write("Halterung: silber <br>");
         }
         if (query["CheckboxSchmuckartikel"] == "check") {
-            _response.write("");
+            _response.write("Schmuckartikel: Christbaumkugeln, bunt" + " St�ckzahl: " + ["StepperSchmuckartikel9"] + "<br>");
+        }
+        if (query["CheckboxSchmuckartikel"] == "check,check") {
+            _response.write("Schmuckartikel: Christbaumkugeln, rot gestreift" + " St�ckzahl: " + ["StepperSchmuckartikel10"] + "<br>");
+        }
+        if (query["CheckboxSchmuckartikel"] == "check,check,check") {
+            _response.write("Schmuckartikel: Lametta, silber" + " St�ckzahl: " + ["StepperSchmuckartikel11"] + "<br>");
+        }
+        if (query["CheckboxSchmuckartikel"] == "check,check,check,check") {
+            _response.write("Schmuckartikel: Lametta, gold" + " St�ckzahl: " + ["StepperSchmuckartikel12"] + "<br>");
         }
         for (let key in query) {
             _response.write(key + ": " + query[key] + "<br>");

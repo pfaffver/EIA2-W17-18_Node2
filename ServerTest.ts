@@ -99,6 +99,11 @@ namespace ServerTest {
             _response.write("Lieferung erfolgt via: Expressversand <br>");
         }
 
+        for (let key in query) {
+            _response.write(key + ": " + query[key] + "<br>");
+
+        }
+
         // Antwort abschlieﬂen und abschicken
         _response.end();
     }

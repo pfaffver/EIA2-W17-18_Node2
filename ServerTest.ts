@@ -62,22 +62,7 @@ namespace ServerTest {
             _response.write("Halterung: silber <br>");
         }
 
-        if (query["CheckboxSchmuckartikel"] == "check") {
-            _response.write("Schmuckartikel: Christbaumkugeln, bunt " + query["StepperSchmuckartikel9"] + "Stk. <br>");
-        }
-
-        if (query["CheckboxSchmuckartikel"] == "check,check") {
-            _response.write("Schmuckartikel: Christbaumkugeln, bunt " + query["StepperSchmuckartikel9"] + "Stk. <br>");
-            _response.write("Schmuckartikel: Christbaumkugeln, rot gestreift " + query["StepperSchmuckartikel10"] + "Stk. <br>");
-        }
-
-        if (query["CheckboxSchmuckartikel"] == "check,check,check") {
-            _response.write("Schmuckartikel: Christbaumkugeln, bunt " + query["StepperSchmuckartikel9"] + "Stk. <br>");
-            _response.write("Schmuckartikel: Christbaumkugeln, rot gestreift " + query["StepperSchmuckartikel10"] + "Stk. <br>");
-            _response.write("Schmuckartikel: Lametta, silber " + query["StepperSchmuckartikel11"] + "Stk. <br>");
-        }
-
-        if (query["CheckboxSchmuckartikel"] == "check,check,check,check") {
+        if (query["CheckboxSchmuckartikel"] == "check" || query["CheckboxSchmuckartikel"] == "check,check" || query["CheckboxSchmuckartikel"] == "check,check,check" || query["CheckboxSchmuckartikel"] == "check,check,check,check") {
             _response.write("Schmuckartikel: Christbaumkugeln, bunt " + query["StepperSchmuckartikel9"] + "Stk. <br>");
             _response.write("Schmuckartikel: Christbaumkugeln, rot gestreift " + query["StepperSchmuckartikel10"] + "Stk. <br>");
             _response.write("Schmuckartikel: Lametta, silber " + query["StepperSchmuckartikel11"] + "Stk. <br>");

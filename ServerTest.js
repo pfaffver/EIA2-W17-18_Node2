@@ -78,8 +78,6 @@ var ServerTest;
         _response.write("Wohnort" + ": " + query["Ort"] + "<br>");
         _response.write("Postleitzahl" + ": " + query["PLZ"] + "<br>");
         _response.write("E-Mail" + ": " + query["E-Mail"] + "<br>");
-        for (let key in query)
-            _response.write(key + ": " + query[key]);
         // Antwort abschlie�en und abschicken
         _response.end();
     }

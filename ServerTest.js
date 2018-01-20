@@ -66,18 +66,18 @@ var ServerTest;
             _response.write("Schmuckartikel: Lametta, silber " + query["StepperSchmuckartikel11"] + "Stk. <br>");
             _response.write("Schmuckartikel: Lametta, gold " + query["StepperSchmuckartikel12"] + "Stk. <br>");
         }
-        _response.write("<p>Lieferadresse<p>" + "Name" + ": " + query["Name"] + "<br>");
+        if (query["Deine Lieferoption"] == "Auswahl13") {
+            _response.write("<p>Lieferadresse<p>" + "Die Lieferung erfolgt via: Standard <br>");
+        }
+        if (query["Deine Lieferoption"] == "Auswahl14") {
+            _response.write("Lieferung erfolgt via: Expressversand <br>");
+        }
+        _response.write("An folgende Adresse <br>" + "Name" + ": " + query["Name"] + "<br>");
         _response.write("Strasse" + ": " + query["Strasse"] + "<br>");
         _response.write("Hausnummer" + ": " + query["Hausnummer"] + "<br>");
         _response.write("Wohnort" + ": " + query["Ort"] + "<br>");
         _response.write("Postleitzahl" + ": " + query["PLZ"] + "<br>");
         _response.write("E-Mail" + ": " + query["E-Mail"] + "<br>");
-        if (query["Deine Lieferoption"] == "Auswahl13") {
-            _response.write("Lieferung erfolgt via: Standard <br>");
-        }
-        if (query["Deine Lieferoption"] == "Auswahl14") {
-            _response.write("Lieferung erfolgt via: Expressversand <br>");
-        }
         // Antwort abschlie�en und abschicken
         _response.end();
     }

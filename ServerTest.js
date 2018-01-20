@@ -72,10 +72,10 @@ var ServerTest;
         _response.write("Wohnort" + ": " + query["Ort"] + "<br>");
         _response.write("Postleitzahl" + ": " + query["PLZ"] + "<br>");
         _response.write("E-Mail" + ": " + query["E-Mail"] + "<br>");
-        if (query["Lieferoption"] == "Auswahl3") {
+        if (query["Deine Lieferoption"] == "Auswahl3") {
             _response.write("Lieferung erfolgt via: Standard <br>");
         }
-        if (query["Lieferoption"] == "Auswahl4") {
+        if (query["Deine Lieferoption"] == "Auswahl4") {
             _response.write("Lieferung erfolgt via: Expressversand <br>");
         }
         for (let key in query) {

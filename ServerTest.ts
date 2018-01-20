@@ -85,13 +85,13 @@ namespace ServerTest {
         }
 
         if (query["Deine Lieferoption"] == "Auswahl13") {
-            _response.write("<p>Lieferadresse<p>" + "Die Lieferung erfolgt via: Standard <br>");
+            _response.write("<p>Lieferadresse<p>" + "Die Lieferung erfolgt via: Standard an folgende Adresse <br>");
         }
 
         if (query["Deine Lieferoption"] == "Auswahl14") {
-            _response.write("<p>Lieferadresse<p>" + "Die Lieferung erfolgt via: Expressversand <br>");
+            _response.write("<p>Lieferadresse<p>" + "Die Lieferung erfolgt via: Expressversand an folgende Adresse <br>");
         }
-        _response.write("An folgende Adresse <br>" + "Name" + ": " + query["Name"] + "<br>");
+        _response.write("Name" + ": " + query["Name"] + "<br>");
         _response.write("Strasse" + ": " + query["Strasse"] + "<br>");
         _response.write("Hausnummer" + ": " + query["Hausnummer"] + "<br>");
         _response.write("Wohnort" + ": " + query["Ort"] + "<br>");

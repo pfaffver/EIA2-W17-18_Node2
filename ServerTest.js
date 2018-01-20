@@ -78,9 +78,6 @@ var ServerTest;
         if (query["Deine Lieferoption"] == "Auswahl4") {
             _response.write("Lieferung erfolgt via: Expressversand <br>");
         }
-        for (let key in query) {
-            _response.write(key + ": " + query[key] + "<br>");
-        }
         // Antwort abschlie�en und abschicken
         _response.end();
     }

@@ -58,7 +58,7 @@ var ServerTest;
             _response.write("Schmuckartikel: Lametta, silber" + " St�ckzahl: " + ["StepperSchmuckartikel11"] + "<br>");
         }
         if (query["CheckboxSchmuckartikel"] == "check,check,check,check") {
-            _response.write("Schmuckartikel: Lametta, gold" + " St�ckzahl: " + ["StepperSchmuckartikel12"] + "<br>");
+            _response.write("Schmuckartikel: Lametta, gold" + " St�ckzahl: " + query["StepperSchmuckartikel12"] + "<br>");
         }
         for (let key in query) {
             _response.write(key + ": " + query[key] + "<br>");

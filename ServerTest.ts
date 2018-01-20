@@ -75,7 +75,7 @@ namespace ServerTest {
         }
         
         if (query["CheckboxSchmuckartikel"] == "check,check,check,check") {
-            _response.write("Schmuckartikel: Lametta, gold" + " Stückzahl: " + ["StepperSchmuckartikel12"] + "<br>");
+            _response.write("Schmuckartikel: Lametta, gold" + " Stückzahl: " + query["StepperSchmuckartikel12"] + "<br>");
         }
 
 

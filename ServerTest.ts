@@ -89,7 +89,7 @@ namespace ServerTest {
         }
 
         if (query["Deine Lieferoption"] == "Auswahl14") {
-            _response.write("Lieferung erfolgt via: Expressversand <br>");
+            _response.write("<p>Lieferadresse<p>" + "Die Lieferung erfolgt via: Expressversand <br>");
         }
         _response.write("An folgende Adresse <br>" + "Name" + ": " + query["Name"] + "<br>");
         _response.write("Strasse" + ": " + query["Strasse"] + "<br>");

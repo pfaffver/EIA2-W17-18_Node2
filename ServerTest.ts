@@ -63,19 +63,19 @@ namespace ServerTest {
         }
 
         if (query["CheckboxSchmuckartikel"] == "check") {
-            _response.write("Schmuckartikel: Christbaumkugeln, bunt" + " Stückzahl: " + ["StepperSchmuckartikel9"] + "<br>");
+            _response.write("Schmuckartikel: Christbaumkugeln, bunt" + " Menge: " + ["StepperSchmuckartikel9"] + "<br>");
         }
         
         if (query["CheckboxSchmuckartikel"] == "check,check") {
-            _response.write("Schmuckartikel: Christbaumkugeln, rot gestreift" + " Stückzahl: " + ["StepperSchmuckartikel10"] + "<br>");
+            _response.write("Schmuckartikel: Christbaumkugeln, rot gestreift" + " Menge: " + ["StepperSchmuckartikel10"] + "<br>");
         }
         
         if (query["CheckboxSchmuckartikel"] == "check,check,check") {
-            _response.write("Schmuckartikel: Lametta, silber" + " Stückzahl: "  + ["StepperSchmuckartikel11"] + "<br>");
+            _response.write("Schmuckartikel: Lametta, silber" + " Menge: "  + ["StepperSchmuckartikel11"] + "<br>");
         }
         
         if (query["CheckboxSchmuckartikel"] == "check,check,check,check") {
-            _response.write("Schmuckartikel: Lametta, gold" + " Stückzahl: " + query["StepperSchmuckartikel12"] + "<br>");
+            _response.write("Schmuckartikel: Lametta, gold" + " Menge: " + query["StepperSchmuckartikel12"] + "<br>");
         }
 
 

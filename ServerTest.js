@@ -49,16 +49,16 @@ var ServerTest;
             _response.write("Halterung: silber <br>");
         }
         if (query["CheckboxSchmuckartikel"] == "check") {
-            _response.write("Schmuckartikel: Christbaumkugeln, bunt" + " St�ckzahl: " + ["StepperSchmuckartikel9"] + "<br>");
+            _response.write("Schmuckartikel: Christbaumkugeln, bunt" + " Menge: " + ["StepperSchmuckartikel9"] + "<br>");
         }
         if (query["CheckboxSchmuckartikel"] == "check,check") {
-            _response.write("Schmuckartikel: Christbaumkugeln, rot gestreift" + " St�ckzahl: " + ["StepperSchmuckartikel10"] + "<br>");
+            _response.write("Schmuckartikel: Christbaumkugeln, rot gestreift" + " Menge: " + ["StepperSchmuckartikel10"] + "<br>");
         }
         if (query["CheckboxSchmuckartikel"] == "check,check,check") {
-            _response.write("Schmuckartikel: Lametta, silber" + " St�ckzahl: " + ["StepperSchmuckartikel11"] + "<br>");
+            _response.write("Schmuckartikel: Lametta, silber" + " Menge: " + ["StepperSchmuckartikel11"] + "<br>");
         }
         if (query["CheckboxSchmuckartikel"] == "check,check,check,check") {
-            _response.write("Schmuckartikel: Lametta, gold" + " St�ckzahl: " + query["StepperSchmuckartikel12"] + "<br>");
+            _response.write("Schmuckartikel: Lametta, gold" + " Menge: " + query["StepperSchmuckartikel12"] + "<br>");
         }
         for (let key in query) {
             _response.write(key + ": " + query[key] + "<br>");
